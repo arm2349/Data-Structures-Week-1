@@ -33,8 +33,6 @@ def check_brackets(S):
             continue
         else:
             #the case where a right bracket appears before a left bracket, for example: ][
-            #if char in rights and len(stack)==0:
-            #    return False
             if len(stack)==0:
                 return i + 1
             top = stack.pop()
