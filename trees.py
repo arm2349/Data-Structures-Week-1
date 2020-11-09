@@ -33,7 +33,7 @@ class TreeNode:
 
     def get_depth(self):
         if len(self.children) == 0:
-            return 0
+            return 1
         return 1 + max(map(TreeNode.get_depth, self.children))
     def __str__(self):
         return self.data
@@ -54,7 +54,7 @@ def get_tree_depth(array):
             nodes[array[i]].add_child(nodes[i])
 
     root_index = array.index(-1)
-    return (1 + nodes[root_index].get_depth())
+    return (nodes[root_index].get_depth())
 
 
 def main():
