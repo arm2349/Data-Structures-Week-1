@@ -10,7 +10,6 @@ class TreeNode:
     def add_child(self, child):
         child.parent = self
         self.children.append(child)
-    ##trying to include add_parent method##
 
     def add_parent(self, parent):
         self.parent = parent
