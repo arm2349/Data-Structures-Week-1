@@ -30,7 +30,7 @@ class TreeNode:
             level +=1
             p=p.parent
         return level
-    ##trying to define get_depth function##
+
     def get_depth(self):
         if len(self.children) == 0:
             return 0
@@ -55,13 +55,6 @@ def get_tree_depth(array):
 
     root_index = array.index(-1)
     return (1 + nodes[root_index].get_depth())
-
-
-#get_inp = input().split()
-#input_array = list(map(int, get_inp))
-
-#if __name__ == "__main__":
-#    print (get_tree_depth(input_array))
 
 
 def main():
